@@ -1,0 +1,5 @@
+http://www.emaraic.com/blog/weka-java-example
+https://wekatutorial.com/
+https://datascience.stackexchange.com/questions/18931/simple-weka-classification-example-in-java-gives-inconsistent-answers
+https://machinelearningmastery.com/how-to-run-your-first-classifier-in-weka/
+https://code.likeagirl.io/beginning-to-weka-step-by-step-93f6564d9f2

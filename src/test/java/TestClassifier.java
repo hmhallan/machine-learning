@@ -9,6 +9,8 @@ import weka.core.converters.ConverterUtils;
 public class TestClassifier {
 
 
+    private static final String DATASETPATH = "/Users/Emaraic/Temp/ml/iris.2D.arff";
+
     @Test
     public void test(){
 

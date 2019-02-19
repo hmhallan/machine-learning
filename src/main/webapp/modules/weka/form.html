@@ -1,0 +1,64 @@
+<div class="card border-primary mb-6">
+    <div class="card-header">Formulário</div>
+    <div class="card-body">
+        <form name="form" ng-submit="classificar()" novalidate>
+            <fieldset>
+                <div class="form-row">
+                    <div class="col-6">
+                        <label class="form-control-label">Largura da Sépala</label>
+                        <input class="form-control" type="number" name="lsepala" ng-model="model.larguraSepala" placeholder="Valor"
+                               ng-class="{ 'is-invalid' : form.lsepala.$invalid && ( form.lsepala.$touched || form.$submitted ) }"
+                               required>
+                        <div class="invalid-feedback"
+                            ng-show="form.lsepala.$invalid && ( form.lsepala.$touched || form.$submitted )">Campo obrigatório</div>
+                    </div>
+
+                    <div class="col-6">
+                        <label class="form-control-label">Altura da Sépala</label>
+                        <input class="form-control" type="number" name="asepala" ng-model="model.alturaSepala" placeholder="Valor"
+                               ng-class="{ 'is-invalid' : form.asepala.$invalid && ( form.asepala.$touched || form.$submitted ) }"
+                               required>
+                        <div class="invalid-feedback"
+                             ng-show="form.asepala.$invalid && ( form.asepala.$touched || form.$submitted )">Campo obrigatório</div>
+                    </div>
+                </div>
+                <br/>
+                <div class="form-row">
+                    <div class="col-6">
+                        <label class="form-control-label">Largura da Pétala</label>
+                        <input class="form-control" type="number" name="lpetala" ng-model="model.larguraPetala" placeholder="Valor"
+                               ng-class="{ 'is-invalid' : form.lpetala.$invalid && ( form.lpetala.$touched || form.$submitted ) }"
+                               required>
+                        <div class="invalid-feedback"
+                             ng-show="form.lpetala.$invalid && ( form.lpetala.$touched || form.$submitted )">Campo obrigatório</div>
+                    </div>
+
+                    <div class="col-6">
+                        <label class="form-control-label">Altura da Pétala</label>
+                        <input class="form-control" type="number" name="apetala" ng-model="model.alturaPetala" placeholder="Valor"
+                               ng-class="{ 'is-invalid' : form.apetala.$invalid && ( form.apetala.$touched || form.$submitted ) }"
+                               required>
+                        <div class="invalid-feedback"
+                             ng-show="form.apetala.$invalid && ( form.apetala.$touched || form.$submitted )">Campo obrigatório</div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-6">
+                        <br/>
+                        <button type="submit" class="btn btn-primary">Classificar</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+
+        <br>
+        <br>
+
+        <div class="card text-white bg-info mb-3" ng-show="tipo">
+            <div class="card-header">Resultado</div>
+            <div class="card-body">
+                <h4 class="card-title">{{tipo}}</h4>
+            </div>
+        </div>
+    </div>
+</div>

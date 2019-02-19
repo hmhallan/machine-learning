@@ -7,6 +7,16 @@ public class Flor {
     private double larguraPetala;
     private double alturaPetala;
 
+    public Flor() {
+    }
+
+    public Flor(double larguraSepala, double alturaSepala, double larguraPetala, double alturaPetala) {
+        this.larguraSepala = larguraSepala;
+        this.alturaSepala = alturaSepala;
+        this.larguraPetala = larguraPetala;
+        this.alturaPetala = alturaPetala;
+    }
+
     @Override
     public String toString() {
         return "Flor{" +

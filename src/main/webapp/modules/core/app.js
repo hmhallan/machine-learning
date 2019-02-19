@@ -1,9 +1,9 @@
 (function(){
 
-    angular.module('jwt.controllers', []);
-    angular.module('jwt.services', []);
+    angular.module('experimento.controllers', []);
+    angular.module('experimento.services', []);
 
-    var app = angular.module('jwt-exemplo', [ 'jwt.controllers', 'jwt.services', 'ngRoute', 'ngStorage']);
+    var app = angular.module('ml-experimento', [ 'experimento.controllers', 'experimento.services', 'ngRoute', 'ngStorage']);
 
 
 

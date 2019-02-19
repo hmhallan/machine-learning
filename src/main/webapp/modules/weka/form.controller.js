@@ -1,7 +1,7 @@
 
 (function(){
 
-    angular.module('jwt.controllers').controller('WekaFormController', ['$scope', '$http',
+    angular.module('experimento.controllers').controller('WekaFormController', ['$scope', '$http',
         function($scope, $http){
 
         $scope.model = {};
